@@ -39,6 +39,7 @@
             c1r3PictureBox = new PictureBox();
             c1r2PictureBox = new PictureBox();
             c1r1PictureBox = new PictureBox();
+            aiGame_Checkbox = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)c3r3PictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)c3r2PictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)c3r1PictureBox).BeginInit();
@@ -173,11 +174,23 @@
             c1r1PictureBox.TabStop = false;
             c1r1PictureBox.Click += tileSpace_Click;
             // 
+            // aiGame_Checkbox
+            // 
+            aiGame_Checkbox.AutoSize = true;
+            aiGame_Checkbox.Location = new Point(124, 413);
+            aiGame_Checkbox.Name = "aiGame_Checkbox";
+            aiGame_Checkbox.Size = new Size(119, 19);
+            aiGame_Checkbox.TabIndex = 22;
+            aiGame_Checkbox.Text = "Computer Game?";
+            aiGame_Checkbox.UseVisualStyleBackColor = true;
+            aiGame_Checkbox.CheckedChanged += aiGame_Checkbox_CheckedChanged;
+            // 
             // TicTacToeGAME
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(352, 401);
+            ClientSize = new Size(352, 457);
+            Controls.Add(aiGame_Checkbox);
             Controls.Add(exitButton);
             Controls.Add(resetGameButton);
             Controls.Add(c3r3PictureBox);
@@ -201,6 +214,7 @@
             ((System.ComponentModel.ISupportInitialize)c1r2PictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)c1r1PictureBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -216,5 +230,6 @@
         private PictureBox c1r3PictureBox;
         private PictureBox c1r2PictureBox;
         private PictureBox c1r1PictureBox;
+        private CheckBox aiGame_Checkbox;
     }
 }
